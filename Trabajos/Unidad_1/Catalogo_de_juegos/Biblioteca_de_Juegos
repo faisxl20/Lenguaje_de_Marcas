@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Biblioteca de juegos-->
+ <catalogo>
+    <videojuego id="001" consola="PS5">
+        <titulo>Elden Ring</titulo>
+        <genero>RPG</genero>
+    </videojuego>
+    <videojuego id="002" consola="PS5">
+        <titulo>GTA V</titulo>
+        <genero>Accion</genero>
+    </videojuego>
+ <catalogo>
+    <videojuego id= "003" consola= "PS5"> 
+        <titulo>EA Sports FC 27</titulo>
+        <genero>Deportes</genero>
+    </videojuego>
+    <videojuego id="004" consola= "PS5">
+        <titulo>UFC6</titulo>
+        <genero>Deportes</genero>
+    </videojuego>
+    <videojuego id= "005" consola= "PS5">
+        <titulo>Content Warning</titulo>
+        <genero>Terror Cooperativo</genero>
+    </videojuego>
+ </catalogo>
