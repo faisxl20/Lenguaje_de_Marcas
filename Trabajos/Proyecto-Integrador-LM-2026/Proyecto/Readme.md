@@ -6,6 +6,14 @@ El tema del que lo voy a hacer es del Sevilla FC ya que es el equipo al que sigo
 
 Palabra del dia: Meta
 
+## UD3 · Estructura HTML
+
+Al revisar mi `index.html`, he visto que:
+
+1. La cabecera necesita una descripción, palabras clave y el nombre del autor; además, el título debe seguir el formato «Inicio | Nombre del proyecto».
+2. El cuerpo necesita el comentario del menú NAV y secciones agrupadas en bloques `div` comentados. También debo completar la jerarquía de títulos con al menos dos `h2` y dos `h3`.
+3. Faltan elementos de contenido solicitados: un `hr`, una cita `blockquote` con dos párrafos y su autoría, una ficha alineada en `pre`, y un pie con entidades HTML.
+
 ## Qué he hecho en esta entrega
 En esta primera práctica he creado la página principal (index.html) sobre el Sevilla FC utilizando etiquetas de texto, imágenes, listas y enlaces. Además, he estructurado los datos de tres de las diez leyendas que he planteado del club en un archivo secundario (datos.xml) aplicando atributos, decimales y elementos vacíos para cumplir con las reglas de la tarea.
 
