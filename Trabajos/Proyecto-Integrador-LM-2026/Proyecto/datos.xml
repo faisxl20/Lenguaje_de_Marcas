@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!--Este archivo contiene información sobre el palmarés, leyendas y afición del Sevilla FC-->
+<sevilla_fc propietario = "faisxl20">
+
+    <!--Aquí dentro escribiremos todos los datos-->
+<leyenda id = "01">
+    <nombre>Jesús Navas</nombre>
+    <posicion>Lateral Derecho</posicion>
+    <altura unidad = "metros">1.72</altura>
+    <canterano/>
+</leyenda>
+
+<leyenda id = "02">
+    <nombre>Frédéric Kanouté</nombre>
+    <posiscion>Delantero</posiscion>
+    <altura unidad = "metros">1.92</altura>
+    <fichaje/>
+</leyenda>
+
+<leyenda id = "03">
+    <nombre>José Antonio Reyes</nombre>
+    <posicion>Extremo Izquierdo</posicion>
+    <altura unidad = "metros">1.75</altura>
+    <canterano/>
+</leyenda>
+
+</sevilla_fc>
