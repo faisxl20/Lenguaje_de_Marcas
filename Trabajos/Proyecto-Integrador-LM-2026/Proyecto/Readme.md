@@ -6,6 +6,9 @@ Correo electrónico: faisalbaroudi14@gmail.com
 ## Palabra del día
 Palabra del día: Contexto
 
+## Evidencia del commit de la palabra del día
+El commit original se realizó en el repositorio `faisxl20/Proyecto` el 22 de octubre de 2026 a las 14:14:35 (hora peninsular española). Su mensaje es `Palabra del dia nueva añadida al README` y su hash es `75c2a608f0f25f5d851864f2489c627baa5696d3`. [Ver el commit original en GitHub](https://github.com/faisxl20/Proyecto/commit/75c2a608f0f25f5d851864f2489c627baa5696d3). Posteriormente, su historial se integró en este repositorio.
+
 ## UD3 · Estructura HTML
 Al revisar mi `index.html`, he visto que:
 1. La cabecera necesita una descripción, palabras clave y el nombre del autor; además, el título debe seguir el formato «Inicio | Nombre del proyecto».
