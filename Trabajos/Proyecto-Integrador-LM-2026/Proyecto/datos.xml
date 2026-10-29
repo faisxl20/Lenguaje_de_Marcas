@@ -12,7 +12,7 @@
 
 <leyenda id = "02">
     <nombre>Frédéric Kanouté</nombre>
-    <posiscion>Delantero</posiscion>
+    <posicion>Delantero</posicion>
     <altura unidad = "metros">1.92</altura>
     <fichaje/>
 </leyenda>
@@ -22,6 +22,55 @@
     <posicion>Extremo Izquierdo</posicion>
     <altura unidad = "metros">1.75</altura>
     <canterano/>
+</leyenda>
+
+<leyenda id = "04">
+    <nombre>Antonio Puerta</nombre>
+    <posicion>Carrilero izquierdo</posicion>
+    <altura unidad = "metros">1.83</altura>
+    <canterano/>
+</leyenda>
+
+<leyenda id = "05">
+    <nombre>Andrés Palop</nombre>
+    <posicion>Portero</posicion>
+    <altura unidad = "metros">1.84</altura>
+    <fichaje/>
+</leyenda>
+
+<leyenda id = "06">
+    <nombre>Luis Fabiano</nombre>
+    <posicion>Delantero</posicion>
+    <altura unidad = "metros">1.85</altura>
+    <fichaje/>
+</leyenda>
+
+<leyenda id = "07">
+    <nombre>Davor Suker</nombre>
+    <posicion>Delantero</posicion>
+    <altura unidad = "metros">1.83</altura>
+    <fichaje/>
+</leyenda>
+
+<leyenda id = "08">
+    <nombre>Éver Banega</nombre>
+    <posicion>Centrocampista</posicion>
+    <altura unidad = "metros">1.75</altura>
+    <fichaje/>
+</leyenda>
+
+<leyenda id = "09">
+    <nombre>Ivan Rakitić</nombre>
+    <posicion>Centrocampista</posicion>
+    <altura unidad = "metros">1.84</altura>
+    <fichaje/>
+</leyenda>
+
+<leyenda id = "10">
+    <nombre>Diego Armando Maradona</nombre>
+    <posicion>Mediapunta</posicion>
+    <altura unidad = "metros">1.65</altura>
+    <fichaje/>
 </leyenda>
 
 </sevilla_fc>
