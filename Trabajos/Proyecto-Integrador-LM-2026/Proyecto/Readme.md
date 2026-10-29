@@ -12,5 +12,14 @@ Al revisar mi `index.html`, he visto que:
 2. El cuerpo necesita el comentario del menú NAV y secciones agrupadas en bloques `div` comentados. También debo completar la jerarquía de títulos con al menos dos `h2` y dos `h3`.
 3. Faltan elementos de contenido solicitados: un `hr`, una cita `blockquote` con dos párrafos y su autoría, una ficha alineada en `pre`, y un pie con entidades HTML.
 
+## Mapa del sitio
+
+| Fichero | title | Qué contiene |
+|---|---|---|
+| `index.html` | Inicio \| SEVILLA FC | Portada del proyecto. |
+| `leyendas.html` | Leyendas \| SEVILLA FC | Todas las leyendas que aparecen en `index.html`, con sus datos tal como aparecen en `datos.xml`. |
+| `palmares.html` | Palmarés \| SEVILLA FC | Los títulos del Sevilla FC. |
+| `aficion.html` | Afición \| SEVILLA FC | La afición sevillista y Biris Norte. |
+
 ## Declaración de IA en commit
 Al intentar subir los cambios desde la carpeta original, vi que estaba vinculada a otro repositorio, el motivo no se cual es y no podía publicarlos directamente en main. Pedí ayuda para integrar ambos historiales sin borrar ni sobrescribir el trabajo. La integración quedó registrada en un merge commit.
