@@ -6,6 +6,9 @@ Correo electrónico: faisalbaroudi14@gmail.com
 ## Palabra del día
 Palabra del día: Contexto
 
+## Historial general de commits
+Debido a un fallo que he tenido con un git push para ordenar las carpetas y tener el trabajo ordenado, se me ha sobreescrito el commit y los anteriores no sale. Dejo por aqui el  historial general de main: https://github.com/faisxl20/Lenguaje_de_Marcas/commits/main 
+
 ## UD3 · Estructura HTML
 Al revisar mi `index.html`, he visto que:
 1. La cabecera necesita una descripción, palabras clave y el nombre del autor; además, el título debe seguir el formato «Inicio | Nombre del proyecto».
