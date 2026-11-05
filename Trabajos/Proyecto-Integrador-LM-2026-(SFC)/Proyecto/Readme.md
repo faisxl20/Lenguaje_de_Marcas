@@ -3,8 +3,8 @@ Nombre: Faisal Baroudi Tarfa
 Nombre de usuario de GitHub: faisxl20
 Correo electrónico: faisalbaroudi14@gmail.com
 
-## Palabra del día
-Palabra del día: Contexto
+## Palabra del día 05/11/2026
+Día
 
 ## Historial general de commits
 Al reorganizar las carpetas, el historial de esta ruta muestra el commit que registra el traslado. Los commits anteriores siguen apareciendo en el historial general de `main`: https://github.com/faisxl20/Lenguaje_de_Marcas/commits/main
