@@ -44,3 +44,8 @@ El commit original se realizó en el repositorio `faisxl20/Proyecto` el 22 de oc
 
 ## Declaración de IA en commit
 Al intentar subir los cambios desde la carpeta original, vi que estaba vinculada a otro repositorio, el motivo no se cual es y no podía publicarlos directamente en main. Pedí ayuda para integrar ambos historiales sin borrar ni sobrescribir el trabajo. La integración quedó registrada en un merge commit. Tambien he usado la IA para rescatar el primer commmit porque se hizo push en una rama ajena a la del repositorio y le he pedido que me ayude a rescatarlo y que me escriba la evidencia para que la profesora pueda entender que es lo que ha pasado y así no perder la puntuación de ese criterio.
+
+## UD5 · Tablas y formularios
+
+En la tabla de `palmares.html` voy a organizar por ámbito y competición los títulos del Sevilla FC, con el número y los años en que se ganaron.
+El formulario de `contacto.html` servirá para que los visitantes envíen consultas sobre el Sevilla FC y sus competiciones.
