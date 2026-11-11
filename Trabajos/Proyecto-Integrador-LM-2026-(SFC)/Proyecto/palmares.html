@@ -24,6 +24,11 @@
     <!-- La tabla recoge el ámbito, las competiciones, el número de títulos y los años de victoria. -->
     <table>
       <caption>Palmarés del Sevilla FC por competición</caption>
+      <colgroup>
+        <col span="2">
+        <col>
+        <col>
+      </colgroup>
       <thead>
         <tr>
           <th scope="col">Ámbito</th>
@@ -34,42 +39,37 @@
       </thead>
       <tbody>
         <tr>
-          <th scope="row">Europeas</th>
-          <td>Copa de la UEFA y UEFA Europa League</td>
+          <th scope="rowgroup" rowspan="2">Europeas</th>
+          <th scope="row">Copa de la UEFA y UEFA Europa League</th>
           <td>7</td>
           <td>2006, 2007, 2014, 2015, 2016, 2020 y 2023</td>
         </tr>
         <tr>
-          <th scope="row">Europeas</th>
-          <td>Supercopa de Europa</td>
+          <th scope="row">Supercopa de Europa</th>
           <td>1</td>
           <td>2006</td>
         </tr>
         <tr>
-          <th scope="row">Nacionales</th>
-          <td>Liga española</td>
+          <th scope="rowgroup" rowspan="3">Nacionales</th>
+          <th scope="row">Liga española</th>
           <td>1</td>
           <td>1945-1946</td>
         </tr>
         <tr>
-          <th scope="row">Nacionales</th>
-          <td>Copa del Rey</td>
+          <th scope="row">Copa del Rey</th>
           <td>5</td>
           <td>1935, 1939, 1948, 2007 y 2010</td>
         </tr>
         <tr>
-          <th scope="row">Nacionales</th>
-          <td>Supercopa de España</td>
+          <th scope="row">Supercopa de España</th>
           <td>1</td>
           <td>2007</td>
         </tr>
       </tbody>
       <tfoot>
         <tr>
-          <th scope="row">Total</th>
-          <td>Títulos oficiales indicados</td>
+          <th scope="row" colspan="3">Total de títulos indicados</th>
           <td>15</td>
-          <td>1935-2023</td>
         </tr>
       </tfoot>
     </table>
