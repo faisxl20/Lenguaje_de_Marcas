@@ -46,6 +46,64 @@
           <input type="password" id="clave-socio" name="clave_socio" placeholder="4 a 8 dígitos" minlength="4" maxlength="8">
         </p>
       </fieldset>
+
+      <!-- Segundo bloque: Detalles de la consulta y preferencias -->
+      <fieldset>
+        <legend>Consulta y preferencias sevillistas</legend>
+
+        <p>
+          <label for="motivo-consulta">Motivo de tu consulta:</label>
+          <select id="motivo-consulta" name="motivo_consulta" required>
+            <option value="">-- Selecciona un motivo --</option>
+            <option value="abonos" selected>Información sobre abonos de temporada</option>
+            <option value="entradas">Compra de entradas para el Ramón Sánchez-Pizjuán</option>
+            <option value="penyas">Alta o información de peñas sevillistas</option>
+            <option value="tour">Tour por el estadio y museo</option>
+          </select>
+        </p>
+
+        <p>Zona del Ramón Sánchez-Pizjuán de tu preferencia:</p>
+        <p>
+          <input type="radio" id="zona-gol-norte" name="zona_estadio" value="gol_norte" checked>
+          <label for="zona-gol-norte">Gol Norte</label>
+        </p>
+        <p>
+          <input type="radio" id="zona-preferencia" name="zona_estadio" value="preferencia">
+          <label for="zona-preferencia">Preferencia</label>
+        </p>
+        <p>
+          <input type="radio" id="zona-fondo" name="zona_estadio" value="fondo">
+          <label for="zona-fondo">Fondo</label>
+        </p>
+        <p>
+          <input type="radio" id="zona-gol-sur" name="zona_estadio" value="gol_sur">
+          <label for="zona-gol-sur">Gol Sur</label>
+        </p>
+
+        <p>Notificaciones que deseas recibir por correo:</p>
+        <p>
+          <input type="checkbox" id="notif-partidos" name="notificaciones" value="partidos" checked>
+          <label for="notif-partidos">Convocatorias y resultados de partidos</label>
+        </p>
+        <p>
+          <input type="checkbox" id="notif-fichajes" name="notificaciones" value="fichajes">
+          <label for="notif-fichajes">Noticias de fichajes y actualidad del club</label>
+        </p>
+        <p>
+          <input type="checkbox" id="notif-tienda" name="notificaciones" value="tienda">
+          <label for="notif-tienda">Promociones y descuentos en la tienda oficial</label>
+        </p>
+
+        <p>
+          <label for="mensaje">Escribe detalladamente tu consulta:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" cols="40" placeholder="Escribe aquí tu duda, sugerencia o consulta sobre el Sevilla FC..." required minlength="10" maxlength="500"></textarea>
+        </p>
+
+        <p>
+          <input type="submit" value="Enviar consulta">
+          <input type="reset" value="Borrar datos">
+        </p>
+      </fieldset>
     </form>
   </div>
 
