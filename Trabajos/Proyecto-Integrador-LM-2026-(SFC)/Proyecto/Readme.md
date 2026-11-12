@@ -36,6 +36,7 @@ He completado la estructura HTML de la portada y he creado las páginas de leyen
 | `leyendas.html` | Leyendas \| SEVILLA FC | Todas las leyendas que aparecen en `index.html`, con sus datos tal como aparecen en `datos.xml`. |
 | `palmares.html` | Palmarés \| SEVILLA FC | Los títulos del Sevilla FC. |
 | `aficion.html` | Afición \| SEVILLA FC | La afición sevillista y Biris Norte. |
+| `contacto.html` | Contacto \| SEVILLA FC | Página con formulario para que los aficionados envíen dudas o soliciten información. |
 
 
 
@@ -49,3 +50,23 @@ Al intentar subir los cambios desde la carpeta original, vi que estaba vinculada
 
 En la tabla de `palmares.html` voy a organizar por ámbito y competición los títulos del Sevilla FC, con el número y los años en que se ganaron.
 El formulario de `contacto.html` servirá para que los visitantes envíen consultas sobre el Sevilla FC y sus competiciones.
+
+### Prueba con GET y por qué uso POST
+
+Al cambiar el formulario a `method="get"` y pulsar enviar, la URL que me salió en la barra del navegador fue:
+`contacto.html?nombre=Faisal+Baroudi&email=faisal%40correo.com&telefono=612345678&clave_socio=1890&motivo_consulta=abonos&zona_estadio=gol_norte&notificaciones=partidos&mensaje=Deseo+informacion+sobre+los+abonos+de+esta+temporada.`
+
+Uso `post` en vez de `get` porque con `post` los datos no se ven en la barra de direcciones ni se quedan guardados en el historial, lo que es mucho más seguro para proteger datos como el correo, el teléfono o la clave de abonado.
+
+### Validación W3C
+
+| Página | Resultado | Errores |
+|---|---|---:|
+| `palmares.html` | Validada sin errores | 0 |
+| `contacto.html` | Validada sin errores | 0 |
+
+Al pasar los dos archivos por el validador del W3C no me ha dado ningún error, ya que las etiquetas de la tabla, los fieldset y los controles estaban bien estructurados y cerrados.
+
+### Qué he hecho en esta unidad
+
+En esta unidad he añadido a la página de palmarés una tabla con los títulos que ha ganado el Sevilla FC, organizándola con cabecera, cuerpo y pie, y agrupando las competiciones con `rowspan` y `colspan`. Además, he creado la página de contacto con un formulario completo para los aficionados, con sus dos bloques, opciones personalizadas sobre el club y campos obligatorios. Por último, he enlazado la nueva página en la portada y he comprobado que todo valida sin fallos en el W3C.
