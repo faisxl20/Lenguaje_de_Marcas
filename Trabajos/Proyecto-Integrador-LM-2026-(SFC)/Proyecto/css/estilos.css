@@ -121,3 +121,163 @@ footer {
   color: #dddddd;
   margin: 0;
 }
+
+
+/* ==========================================================================
+   MENÚ DE NAVEGACIÓN (Tema 7 - Selectores descendientes y enlaces)
+   ========================================================================== */
+nav {
+  background-color: #d4001f;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  margin: 0 auto;
+  width: 90%;
+  padding: 0;
+}
+
+nav li {
+  margin: 5px 10px;
+  padding: 0;
+}
+
+nav a {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.05rem;
+  padding: 6px 12px;
+  background-color: #a60018;
+  border: solid 1px #ffffff;
+}
+
+/* ==========================================================================
+   TABLA DE PALMARÉS Y TÍTULOS (Tema 7 - Tablas, bordes y paddings)
+   ========================================================================== */
+table {
+  width: 95%;
+  margin: 25px auto;
+  border: solid 2px #d4001f;
+  background-color: #ffffff;
+}
+
+caption {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #d4001f;
+  padding: 10px;
+  text-align: center;
+}
+
+th, td {
+  padding: 10px 14px;
+  border: solid 1px #dddddd;
+}
+
+thead th {
+  background-color: #d4001f;
+  color: #ffffff;
+  font-size: 1rem;
+  text-align: center;
+  border: solid 1px #ffffff;
+}
+
+tbody th {
+  background-color: #f9f9f9;
+  color: #333333;
+  font-weight: bold;
+  text-align: left;
+}
+
+tbody td {
+  text-align: center;
+  color: #444444;
+}
+
+tfoot {
+  background-color: #eeeeee;
+  font-weight: bold;
+}
+
+tfoot th {
+  text-align: right;
+  color: #d4001f;
+}
+
+tfoot td {
+  text-align: center;
+  color: #d4001f;
+  font-weight: bold;
+}
+
+/* ==========================================================================
+   FORMULARIO DE ATENCIÓN AL AFICIONADO (Tema 7 - Formularios y Atributos)
+   ========================================================================== */
+form {
+  margin: 20px 0;
+}
+
+fieldset {
+  background-color: #ffffff;
+  border: solid 2px #d4001f;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+legend {
+  color: #d4001f;
+  font-weight: bold;
+  font-size: 1.15rem;
+  padding: 0 10px;
+}
+
+label {
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+input, select, textarea {
+  padding: 8px 10px;
+  border: solid 1px #cccccc;
+  background-color: #fafafa;
+  font-size: 14px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  width: 95%;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  width: auto;
+  margin: 0 6px 0 0;
+}
+
+input[type="submit"] {
+  background-color: #d4001f;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 15px;
+  border: solid 2px #a60018;
+  padding: 10px 20px;
+  width: auto;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+input[type="reset"] {
+  background-color: #666666;
+  color: #ffffff;
+  font-size: 15px;
+  border: solid 2px #444444;
+  padding: 10px 20px;
+  width: auto;
+  margin-top: 10px;
+}
+
+/* Elementos de medición (progress y meter) */
+progress, meter {
+  width: 250px;
+  height: 20px;
+  margin: 5px 0;
+}
