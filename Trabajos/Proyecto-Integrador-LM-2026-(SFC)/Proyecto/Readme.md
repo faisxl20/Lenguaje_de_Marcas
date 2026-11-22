@@ -70,3 +70,79 @@ Al pasar los dos archivos por el validador del W3C no me ha dado ningún error, 
 ### Qué he hecho en esta unidad
 
 En esta unidad he añadido a la página de palmarés una tabla con los títulos que ha ganado el Sevilla FC, organizándola con cabecera, cuerpo y pie, y agrupando las competiciones con `rowspan` y `colspan`. Además, he creado la página de contacto con un formulario completo para los aficionados, con sus dos bloques, opciones personalizadas sobre el club y campos obligatorios. Por último, he enlazado la nueva página en la portada y he comprobado que todo valida sin fallos en el W3C.
+
+
+## Tarea 6-7
+
+En esta práctica he seguido mejorando mi página web sobre el Sevilla FC aplicando los conceptos que hemos estudiado en clase durante los temas 6 y 7 de Lenguaje de Marcas.
+
+### 1. Estructura semántica en HTML5 (Reto 1)
+Antes tenía la página organizada usando muchos bloques `<div>` genéricos. Siguiendo lo que hemos dado en el Tema 6, he reestructurado tanto `index.html` como `palmares.html` y `contacto.html` para usar etiquetas semánticas con significado real:
+* He colocado un `<header>` arriba con el escudo, el título principal del club y una pequeña introducción.
+* He añadido la barra de menú con `<nav>` enlazando a todas las páginas de mi sitio (`index.html`, `palmares.html`, `leyendas.html`, `aficion.html` y `contacto.html`) para que el usuario pueda navegar cómodamente.
+* Todo el contenido central lo he metido dentro de un único `<main>`, dividiéndolo en secciones con `<section>` y artículos con `<article>` (por ejemplo, para la historia de las leyendas y los títulos de Europa League).
+* A un lado he puesto un `<aside>` con datos rápidos del estadio y del club en texto preformateado (`<pre>`), además de enlaces de interés.
+* En el pie de página (`<footer>`) he añadido mi firma con el identificador que pedía la profesora: `<p id="firma-faisxl20">© 2026 Faisal Baroudi Tarfa (faisxl20)</p>`, y he actualizado el `<meta name="author" content="faisxl20">` en la cabecera de los archivos.
+
+### 2. Formulario y elementos de medición (Reto 2)
+En la página `contacto.html` he ampliado el formulario de atención al sevillista para practicar los nuevos controles de HTML5:
+* He añadido 7 tipos de `input` nuevos que vimos en el tema: `email`, `tel`, `date` (para elegir fecha de nacimiento), `url` (para la web de la peña), `number` (para pedir entre 1 y 6 entradas), `range` (una barra deslizante para indicar del 1 al 10 con qué frecuencia vas al estadio) y `color` (para seleccionar el color de la bufanda sevillista).
+* Para las validaciones he usado `required`, `placeholder`, `min`, `max`, `step` y `autofocus` en el primer campo. Además, para el carné de socio he puesto una expresión regular con `pattern="SFC-[0-9]{5}"` y un `title` que te explica el formato si te equivocas (por ejemplo, `SFC-12345`).
+* Antes del formulario he incluido dos elementos de medición del Tema 6:
+  * Un `<progress>` para ver cómo va la campaña de renovación de abonos (al 85%).
+  * Un `<meter>` para indicar de forma gráfica el aforo medio ocupado en el Ramón Sánchez-Pizjuán (39.500 espectadores sobre un máximo de 43.883).
+
+### 3. Vídeo, figuras y preguntas frecuentes (Reto 3)
+En la portada `index.html` he añadido una sección multimedia para hacer la web más entretenida:
+* He creado la carpeta `media/` donde he guardado el vídeo del himno en el estadio cantado por la afición en dos formatos distintos (`.mp4` y `.webm`), con su carátula (`poster="media/poster_himno.jpg"`) y la barra de controles (`controls`), pesando menos de 10 MB. También he añadido el audio en `.mp3` y `.ogg`.
+* Además, como la profesora permitía incluir un vídeo de YouTube, he incrustado con un `<iframe>` el vídeo oficial del himno del centenario en el Sánchez-Pizjuán.
+* He puesto dos fotos con `<figure>` y su pie explicativo en `<figcaption>` (una del estadio y otra de las 7 copas de la Europa League).
+* Para las dudas he creado una sección de preguntas frecuentes con tres desplegables usando `<details>` y `<summary>`. Una de las preguntas viene abierta por defecto con `open`, y en otra he explicado cómo se hace la tabla de títulos escribiendo las etiquetas con las entidades `&lt;table&gt;` y `&lt;th&gt;` para que el navegador no las confunda con código.
+
+### 4. Hoja de estilos externa (Tema 7)
+He creado la carpeta `css/` con el archivo `estilos.css` y lo he vinculado en el `<head>` de todas las páginas con la etiqueta `<link rel="stylesheet" href="css/estilos.css">`.
+Para no meter cosas que no hayamos dado en clase, me he limitado estrictamente a las propiedades y selectores del Tema 7:
+* He usado el selector universal `*` para quitar los márgenes y rellenos por defecto que meten los navegadores (`margin: 0; padding: 0`).
+* He definido los colores oficiales del Sevilla FC usando valores hexadecimales: blanco (`#ffffff`), rojo sevillista (`#d4001f` y `#c8102e`) y un gris oscuro (`#222222`) para que los textos sobre fondo claro se lean cómodamente.
+* He organizado el modelo de caja usando `margin`, `padding` y `border: solid ...` en la cabecera, los títulos, la tabla de palmarés y los bloques del formulario.
+* Para los anchos he usado porcentajes (`width: 90%`, `width: 95%`) y píxeles (`px`), además de tamaños de letra en `rem` y `px`.
+* En los selectores he practicado selectores de etiqueta (`table`, `th`, `td`), selectores descendientes (`nav ul`, `nav a`, `table th`), selectores de ID (`#firma-faisxl20`) y selectores de atributos para darle estilo propio a los botones de enviar y borrar del formulario (`input[type="submit"]` e `input[type="reset"]`).
+
+### 5. Cómo queda la carpeta de mi proyecto
+```text
+Proyecto-Integrador-LM-2026/
+└── Proyecto/
+    ├── index.html (portada con la estructura HTML5, multimedia y enlaces)
+    ├── palmares.html (página con la tabla de títulos y diseño CSS)
+    ├── contacto.html (formulario con nuevos inputs y barras progress/meter)
+    ├── leyendas.html (lista de jugadores históricos con estilos aplicados)
+    ├── aficion.html (historia de la afición sevillista y peñas con estilos)
+    ├── datos.xml (archivo de datos en XML del club)
+    ├── Readme.md (documentación del proyecto y notas de cada tema)
+    ├── css/
+    │   └── estilos.css (hoja de estilos CSS externa del Tema 7)
+    ├── media/
+    │   ├── copas_europa_league.jpg (foto para el figure de trofeos)
+    │   ├── estadio_sanchez_pizjuan.jpg (foto para el figure del estadio)
+    │   ├── himno_sevilla_estadio.mp4 (vídeo local en formato MP4)
+    │   ├── himno_sevilla_estadio.webm (vídeo local en formato WebM)
+    │   ├── himno_sevilla_estadio.mp3 (audio en MP3)
+    │   ├── himno_sevilla_estadio.ogg (audio en OGG)
+    │   └── poster_himno.jpg (carátula del vídeo)
+    ├── img/
+    │   └── escudo_sevilla_fc.png (escudo del club)
+    └── capturas/
+        └── captura_portada_navegador.png (captura de la portada en el navegador con CSS)
+```
+
+### 6. Historial de commits realizados
+He ido trabajando paso a paso, comprobando los cambios en el navegador antes de cada commit para que el historial refleje el avance real:
+1. `chore: inicio tarea 6-7` (commit inicial que pedía la profesora al empezar).
+2. `feat: estructura semántica html5 en index` (primera versión semántica de la portada).
+3. `feat: estructura semántica html5 en palmares` (semántica en la página del palmarés).
+4. `feat: formulario con controles html5` (formulario de contacto con inputs y elementos de medición).
+5. `feat: video, figuras y preguntas frecuentes` (sección multimedia, fotos con pie y dudas en portada).
+6. `style: estructura base, colores y tipografia en css` (creación de estilos.css y enlace en todas las páginas).
+7. `style: navegacion, tabla de titulos y formulario` (diseño de la barra del menú, tabla y campos).
+8. `style: multimedia, figuras, preguntas frecuentes y barra lateral` (diseño de vídeos, imágenes y desplegables).
+9. `docs: documentacion y entrega final tarea 6-7` (documentación en el README y carpeta de capturas).
