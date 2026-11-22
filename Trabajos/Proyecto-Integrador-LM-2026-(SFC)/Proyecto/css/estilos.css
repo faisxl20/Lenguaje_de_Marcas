@@ -281,3 +281,106 @@ progress, meter {
   height: 20px;
   margin: 5px 0;
 }
+
+
+/* ==========================================================================
+   MULTIMEDIA: VÍDEO E IFRAME (Tema 7 - Modelo de caja y bordes)
+   ========================================================================== */
+video, iframe {
+  margin: 15px auto;
+  border: solid 2px #d4001f;
+  background-color: #000000;
+  width: 90%;
+}
+
+/* ==========================================================================
+   GALERÍA GRÁFICA CON FIGURE Y FIGCAPTION (Tema 7 - Imágenes y textos)
+   ========================================================================== */
+figure {
+  margin: 20px auto;
+  padding: 12px;
+  background-color: #ffffff;
+  border: solid 1px #dddddd;
+  text-align: center;
+  width: 90%;
+}
+
+figure img {
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+}
+
+figcaption {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #555555;
+  padding-top: 10px;
+  text-align: center;
+}
+
+/* ==========================================================================
+   PREGUNTAS FRECUENTES: DETAILS Y SUMMARY (Tema 7 - Cajas y colores)
+   ========================================================================== */
+details {
+  background-color: #ffffff;
+  border: solid 1px #e0e0e0;
+  margin: 12px 0;
+  padding: 8px 12px;
+}
+
+summary {
+  font-weight: bold;
+  font-size: 1.05rem;
+  color: #d4001f;
+  padding: 6px 0;
+}
+
+details p {
+  padding: 10px 15px;
+  color: #333333;
+  font-size: 0.95rem;
+  background-color: #fafafa;
+  border-left: solid 3px #d4001f;
+  margin-top: 8px;
+}
+
+/* ==========================================================================
+   BARRA LATERAL Y DATOS DEL CLUB: ASIDE (Tema 7 - Aside y texto preformateado)
+   ========================================================================== */
+aside {
+  width: 90%;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: solid 2px #d4001f;
+}
+
+aside h2 {
+  color: #d4001f;
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+aside pre {
+  background-color: #f0f0f0;
+  border: solid 1px #cccccc;
+  padding: 15px;
+  margin: 15px 0;
+  font-size: 0.95rem;
+  color: #333333;
+}
+
+aside ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+aside li {
+  margin-bottom: 8px;
+}
+
+aside a {
+  color: #c8102e;
+  font-weight: bold;
+}
