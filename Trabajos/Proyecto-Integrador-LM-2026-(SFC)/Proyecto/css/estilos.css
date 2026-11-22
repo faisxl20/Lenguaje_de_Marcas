@@ -1,0 +1,123 @@
+/* ==========================================================================
+   ESTILOS GENERALES - SEVILLA FC
+   Tema 7: Introducción a las Hojas de Estilo en Cascada
+   Autor: faisxl20 (Faisal Baroudi Tarfa)
+   ========================================================================== */
+
+/* Reseteo básico universal (Tema 7) */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo general del cuerpo de la página */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #222222;
+  background-color: #f7f7f7;
+}
+
+/* Cabecera principal corporativa */
+header {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 25px 20px;
+  border-bottom: solid 4px #d4001f;
+}
+
+header img {
+  margin: 0 auto 10px auto;
+  width: 200px;
+  height: auto;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  color: #d4001f;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+header p {
+  font-size: 1.05rem;
+  color: #555555;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Contenedor principal de contenidos */
+main {
+  width: 90%;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* Títulos de secciones y artículos (agrupación y selectores de etiqueta) */
+h2 {
+  color: #c8102e;
+  font-size: 1.6rem;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  border-bottom: solid 2px #e0e0e0;
+  padding-bottom: 5px;
+}
+
+h3 {
+  color: #333333;
+  font-size: 1.3rem;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  color: #555555;
+  font-size: 1.1rem;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+/* Citas destacadas */
+blockquote {
+  background-color: #ffffff;
+  border-left: solid 5px #d4001f;
+  padding: 15px 20px;
+  margin: 20px 0;
+  font-style: italic;
+  color: #444444;
+}
+
+cite {
+  font-size: 0.9rem;
+  color: #777777;
+  margin-top: 5px;
+}
+
+/* Separadores horizontales */
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #dddddd;
+  margin: 25px 0;
+}
+
+/* Pie de página */
+footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: solid 3px #d4001f;
+}
+
+/* Firma identificada del alumno (selector de id) */
+#firma-faisxl20 {
+  font-size: 0.95rem;
+  color: #dddddd;
+  margin: 0;
+}
