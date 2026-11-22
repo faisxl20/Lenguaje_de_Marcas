@@ -6,110 +6,184 @@
   <title>Contacto | SEVILLA FC</title>
   <meta name="description" content="Formulario de atención y contacto para aficionados del Sevilla FC: consultas, dudas y atención al sevillista.">
   <meta name="keywords" content="Sevilla FC, contacto, afición, formulario, atención al sevillista">
-  <meta name="author" content="Faisal Baroudi Tarfa">
+  <meta name="author" content="faisxl20">
 </head>
 <body>
-  <!-- NAV: aquí irá el menú (UD4) -->
-
   <!-- Cabecera de la página de contacto -->
-  <div>
+  <header>
     <h1>Contacto con el Sevilla FC</h1>
     <p>Ponte en contacto con el Sevilla FC para resolver cualquier consulta sobre abonos, entradas, peñas o información del club.</p>
-  </div>
+  </header>
 
-  <!-- Bloque del formulario de atención al aficionado -->
-  <div>
-    <h2>Formulario de atención al sevillista</h2>
+  <!-- Menú de navegación principal (UD6) -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="palmares.html">Palmarés</a></li>
+      <li><a href="leyendas.html">Leyendas</a></li>
+      <li><a href="aficion.html">Afición</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
 
-    <form action="#" method="post">
-      <!-- Primer bloque: Datos personales del aficionado -->
-      <fieldset>
-        <legend>Datos personales del aficionado</legend>
+  <!-- Contenedor principal de la página -->
+  <main>
+    <section id="atencion-aficionado">
+      <h2>Formulario de atención al sevillista</h2>
 
+      <!-- Bloque de indicadores con progress y meter (UD6) -->
+      <article id="estado-campana">
+        <h3>Estado de la campaña de abonos y aforo</h3>
         <p>
-          <label for="nombre">Nombre y apellidos:</label>
-          <input type="text" id="nombre" name="nombre" placeholder="Ej. Faisal Baroudi" required minlength="3" maxlength="60" autofocus>
+          Progreso de renovación de abonos temporada 2026:
+          <progress value="85" max="100">85%</progress>
+          <span>(85% completado)</span>
         </p>
+        <p>
+          Ocupación media del Ramón Sánchez-Pizjuán:
+          <meter min="0" max="43883" value="39500" low="15000" high="40000" optimum="43883">39.500 de 43.883</meter>
+          <span>(39.500 espectadores sobre 43.883)</span>
+        </p>
+      </article>
 
-        <p>
-          <label for="email">Correo electrónico:</label>
-          <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required maxlength="80">
-        </p>
+      <!-- Bloque del formulario principal con controles HTML5 -->
+      <article id="formulario-contacto">
+        <h3>Envía tu consulta o solicitud</h3>
 
-        <p>
-          <label for="telefono">Teléfono de contacto:</label>
-          <input type="tel" id="telefono" name="telefono" placeholder="Ej. 612345678" pattern="[0-9]{9}">
-        </p>
+        <form action="#" method="post">
+          <!-- Primer bloque: Datos personales del aficionado -->
+          <fieldset>
+            <legend>Datos personales del aficionado</legend>
 
-        <p>
-          <label for="clave-socio">Clave o PIN de abonado (opcional):</label>
-          <input type="password" id="clave-socio" name="clave_socio" placeholder="4 a 8 dígitos" minlength="4" maxlength="8">
-        </p>
-      </fieldset>
+            <p>
+              <label for="nombre">Nombre y apellidos:</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Ej. Faisal Baroudi" required minlength="3" maxlength="60" autofocus>
+            </p>
 
-      <!-- Segundo bloque: Detalles de la consulta y preferencias -->
-      <fieldset>
-        <legend>Consulta y preferencias sevillistas</legend>
+            <p>
+              <label for="email">Correo electrónico:</label>
+              <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required maxlength="80">
+            </p>
 
-        <p>
-          <label for="motivo-consulta">Motivo de tu consulta:</label>
-          <select id="motivo-consulta" name="motivo_consulta" required>
-            <option value="">-- Selecciona un motivo --</option>
-            <option value="abonos" selected>Información sobre abonos de temporada</option>
-            <option value="entradas">Compra de entradas para el Ramón Sánchez-Pizjuán</option>
-            <option value="penyas">Alta o información de peñas sevillistas</option>
-            <option value="tour">Tour por el estadio y museo</option>
-          </select>
-        </p>
+            <p>
+              <label for="telefono">Teléfono de contacto:</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="Ej. 612345678" pattern="[0-9]{9}" required>
+            </p>
 
-        <p>Zona del Ramón Sánchez-Pizjuán de tu preferencia:</p>
-        <p>
-          <input type="radio" id="zona-gol-norte" name="zona_estadio" value="gol_norte" checked>
-          <label for="zona-gol-norte">Gol Norte</label>
-        </p>
-        <p>
-          <input type="radio" id="zona-preferencia" name="zona_estadio" value="preferencia">
-          <label for="zona-preferencia">Preferencia</label>
-        </p>
-        <p>
-          <input type="radio" id="zona-fondo" name="zona_estadio" value="fondo">
-          <label for="zona-fondo">Fondo</label>
-        </p>
-        <p>
-          <input type="radio" id="zona-gol-sur" name="zona_estadio" value="gol_sur">
-          <label for="zona-gol-sur">Gol Sur</label>
-        </p>
+            <p>
+              <label for="clave-socio">Clave o PIN de abonado (opcional):</label>
+              <input type="password" id="clave-socio" name="clave_socio" placeholder="4 a 8 dígitos" minlength="4" maxlength="8">
+            </p>
 
-        <p>Notificaciones que deseas recibir por correo:</p>
-        <p>
-          <input type="checkbox" id="notif-partidos" name="notificaciones" value="partidos" checked>
-          <label for="notif-partidos">Convocatorias y resultados de partidos</label>
-        </p>
-        <p>
-          <input type="checkbox" id="notif-fichajes" name="notificaciones" value="fichajes">
-          <label for="notif-fichajes">Noticias de fichajes y actualidad del club</label>
-        </p>
-        <p>
-          <input type="checkbox" id="notif-tienda" name="notificaciones" value="tienda">
-          <label for="notif-tienda">Promociones y descuentos en la tienda oficial</label>
-        </p>
+            <p>
+              <label for="carnet-socio">Número de carné de socio (formato oficial):</label>
+              <input type="text" id="carnet-socio" name="carnet_socio" placeholder="SFC-12345" pattern="SFC-[0-9]{5}" title="El código debe comenzar por SFC- seguido de 5 números (ej: SFC-12345)">
+            </p>
 
-        <p>
-          <label for="mensaje">Escribe detalladamente tu consulta:</label>
-          <textarea id="mensaje" name="mensaje" rows="5" cols="40" placeholder="Escribe aquí tu duda, sugerencia o consulta sobre el Sevilla FC..." required minlength="10" maxlength="500"></textarea>
-        </p>
+            <p>
+              <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+              <input type="date" id="fecha-nacimiento" name="fecha_nacimiento">
+            </p>
 
-        <p>
-          <input type="submit" value="Enviar consulta">
-          <input type="reset" value="Borrar datos">
-        </p>
-      </fieldset>
-    </form>
-  </div>
+            <p>
+              <label for="web-penya">Página web o red social de tu peña (opcional):</label>
+              <input type="url" id="web-penya" name="web_penya" placeholder="https://www.peñasevillista.com">
+            </p>
+          </fieldset>
+
+          <!-- Segundo bloque: Detalles de la consulta y preferencias -->
+          <fieldset>
+            <legend>Consulta y preferencias sevillistas</legend>
+
+            <p>
+              <label for="motivo-consulta">Motivo de tu consulta:</label>
+              <select id="motivo-consulta" name="motivo_consulta" required>
+                <option value="">-- Selecciona un motivo --</option>
+                <option value="abonos" selected>Información sobre abonos de temporada</option>
+                <option value="entradas">Compra de entradas para el Ramón Sánchez-Pizjuán</option>
+                <option value="penyas">Alta o información de peñas sevillistas</option>
+                <option value="tour">Tour por el estadio y museo</option>
+              </select>
+            </p>
+
+            <p>
+              <label for="entradas">Número de entradas deseadas (1 a 6):</label>
+              <input type="number" id="entradas" name="entradas" min="1" max="6" step="1" value="1">
+            </p>
+
+            <p>
+              <label for="frecuencia-estadio">Asistencia habitual al estadio (1: Ocasional - 10: Abonado fiel):</label>
+              <input type="range" id="frecuencia-estadio" name="frecuencia_estadio" min="1" max="10" step="1" value="5">
+            </p>
+
+            <p>
+              <label for="color-bufanda">Color preferido para tu bufanda conmemorativa:</label>
+              <input type="color" id="color-bufanda" name="color_bufanda" value="#d4001f">
+            </p>
+
+            <p>Zona del Ramón Sánchez-Pizjuán de tu preferencia:</p>
+            <p>
+              <input type="radio" id="zona-gol-norte" name="zona_estadio" value="gol_norte" checked>
+              <label for="zona-gol-norte">Gol Norte</label>
+            </p>
+            <p>
+              <input type="radio" id="zona-preferencia" name="zona_estadio" value="preferencia">
+              <label for="zona-preferencia">Preferencia</label>
+            </p>
+            <p>
+              <input type="radio" id="zona-fondo" name="zona_estadio" value="fondo">
+              <label for="zona-fondo">Fondo</label>
+            </p>
+            <p>
+              <input type="radio" id="zona-gol-sur" name="zona_estadio" value="gol_sur">
+              <label for="zona-gol-sur">Gol Sur</label>
+            </p>
+
+            <p>Notificaciones que deseas recibir por correo:</p>
+            <p>
+              <input type="checkbox" id="notif-partidos" name="notificaciones" value="partidos" checked>
+              <label for="notif-partidos">Convocatorias y resultados de partidos</label>
+            </p>
+            <p>
+              <input type="checkbox" id="notif-fichajes" name="notificaciones" value="fichajes">
+              <label for="notif-fichajes">Noticias de fichajes y actualidad del club</label>
+            </p>
+            <p>
+              <input type="checkbox" id="notif-tienda" name="notificaciones" value="tienda">
+              <label for="notif-tienda">Promociones y descuentos en la tienda oficial</label>
+            </p>
+
+            <p>
+              <label for="mensaje">Escribe detalladamente tu consulta:</label>
+              <textarea id="mensaje" name="mensaje" rows="5" cols="40" placeholder="Escribe aquí tu duda, sugerencia o consulta sobre el Sevilla FC..." required minlength="10" maxlength="500"></textarea>
+            </p>
+
+            <p>
+              <input type="submit" value="Enviar consulta">
+              <input type="reset" value="Borrar datos">
+            </p>
+          </fieldset>
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <!-- Barra lateral con información complementaria -->
+  <aside>
+    <h2>Horarios y atención presencial</h2>
+    <p><strong>Taquillas del estadio:</strong> Lunes a viernes de 10:00 a 14:00 y de 16:00 a 19:00.</p>
+    <p><strong>Días de partido:</strong> Abiertas desde cuatro horas antes del pitido inicial.</p>
+    <p><strong>Teléfono oficial:</strong> 954 53 53 53</p>
+    <h3>Enlaces directos</h3>
+    <ul>
+      <li><a href="index.html">Volver a la portada</a></li>
+      <li><a href="palmares.html">Ver palmarés oficial</a></li>
+    </ul>
+  </aside>
 
   <!-- Pie de página -->
   <footer>
-    <p>&copy; 2026 Faisal Baroudi Tarfa</p>
+    <p id="firma-faisxl20">&copy; 2026 Faisal Baroudi Tarfa (faisxl20)</p>
   </footer>
 </body>
 </html>
