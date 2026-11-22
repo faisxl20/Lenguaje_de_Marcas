@@ -88,6 +88,68 @@
                     <p><cite>Faisal Baroudi Tarfa, opinión personal.</cite></p>
                 </article>
             </section>
+
+            <hr>
+
+            <!-- Sección 3: Multimedia e Interactivos (UD6) -->
+            <section id="multimedia-interactivos">
+                <h2>Multimedia y pasión sevillista</h2>
+
+                <!-- Artículo: Reproductor de vídeo local e himno de YouTube -->
+                <article id="himno-sevilla">
+                    <h3>El Himno del Centenario en Nervión</h3>
+                    <p>Revive la emoción del himno del Sevilla FC cantado al unísono por más de 40.000 gargantas en el Ramón Sánchez-Pizjuán:</p>
+
+                    <!-- Vídeo local con controls, poster y 2 source (UD6) -->
+                    <video controls poster="media/poster_himno.jpg" width="560">
+                        <source src="media/himno_sevilla_estadio.mp4" type="video/mp4">
+                        <source src="media/himno_sevilla_estadio.webm" type="video/webm">
+                        <p>Tu navegador no admite la reproducción de vídeo HTML5.</p>
+                    </video>
+
+                    <h4>Vídeo en directo desde YouTube</h4>
+                    <!-- Vídeo incrustado de YouTube mediante iframe -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/eaiaRu4Bvn8" title="Himno del Sevilla FC en el Sánchez-Pizjuán" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </article>
+
+                <!-- Artículo: Galería fotográfica con figure y figcaption -->
+                <article id="galeria-estadio-trofeos">
+                    <h3>Iconos del sevillismo</h3>
+
+                    <figure>
+                        <img src="media/estadio_sanchez_pizjuan.jpg" alt="Estadio Ramón Sánchez-Pizjuán" width="500">
+                        <figcaption>Estadio Ramón Sánchez-Pizjuán, mítico templo sevillista en el barrio de Nervión con capacidad para 43.883 espectadores.</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="media/copas_europa_league.jpg" alt="Trofeos de la UEFA Europa League del Sevilla FC" width="500">
+                        <figcaption>Los 7 trofeos de la UEFA Europa League conquistados por el Sevilla FC, récord absoluto en la historia de la competición.</figcaption>
+                    </figure>
+                </article>
+
+                <!-- Artículo: Sección interactiva de Preguntas Frecuentes (FAQ) -->
+                <article id="preguntas-frecuentes">
+                    <h3>Preguntas frecuentes sobre el club (FAQ)</h3>
+
+                    <!-- FAQ 1: abierta por defecto con open -->
+                    <details open>
+                        <summary>¿Cuántas veces ha ganado el Sevilla FC la UEFA Europa League?</summary>
+                        <p>El Sevilla FC ha conquistado la UEFA Europa League en 7 ocasiones (2006, 2007, 2014, 2015, 2016, 2020 y 2023), siendo el único club en el mundo que ostenta dicho récord histórico.</p>
+                    </details>
+
+                    <!-- FAQ 2: con entidades &lt; y &gt; -->
+                    <details>
+                        <summary>¿Cómo se estructuran técnicamente los datos del palmarés en esta web?</summary>
+                        <p>En el código fuente de nuestra web, los datos de los títulos se organizan semánticamente utilizando la etiqueta &lt;table&gt; junto a cabeceras de columna con &lt;th scope="col"&gt; y filas definidas mediante &lt;tr&gt;.</p>
+                    </details>
+
+                    <!-- FAQ 3 -->
+                    <details>
+                        <summary>¿Dónde se ubica el estadio y cómo se puede acceder en día de partido?</summary>
+                        <p>El Ramón Sánchez-Pizjuán está ubicado en el céntrico barrio de Nervión en Sevilla. Se recomienda acudir en transporte público (metro Nervión o Gran Plaza) con al menos una hora de antelación.</p>
+                    </details>
+                </article>
+            </section>
         </main>
 
         <!-- Barra lateral con información complementaria -->
